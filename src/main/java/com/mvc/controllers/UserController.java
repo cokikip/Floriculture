@@ -41,7 +41,7 @@ public class UserController {
 	public String saveUser(@ModelAttribute Users user, Model model) {
 
 		if (user.getRole().equals("customer")) {
-			user.setRole("ROLE_ADMIN");
+			user.setRole("ROLE_CUSTOMER");
 
 		} else {
 			// user.setRole("ROLE_FARMER");
